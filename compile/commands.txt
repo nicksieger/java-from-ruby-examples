@@ -1,6 +1,13 @@
+# These commands were run with JRuby HEAD prior to the 1.6 release.
+# The 'jrubyc --javac' with a .java file on the command line requires 1.6.
+
 $ jrubyc --javac compile.rb Starter.java
 Generating Java class Engine to demo/Engine.java
 javac -cp jruby.jar:. demo/Engine.java Starter.java
+
+# Alternate for JRuby 1.5
+$ jrubyc --java compile.rb
+$ javac -cp jruby.jar:. *.java
 
 $ java -cp jruby.jar:. Starter
 The #<Engine:0x59c958af> is running. 
