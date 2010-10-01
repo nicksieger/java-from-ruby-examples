@@ -1,0 +1,6 @@
+$ jrubyc --javac compile.rb Starter.java
+Generating Java class Engine to demo/Engine.java
+javac -cp jruby.jar:. demo/Engine.java Starter.java
+
+$ java -cp jruby.jar:. Starter
+The #<Engine:0x59c958af> is running. 
